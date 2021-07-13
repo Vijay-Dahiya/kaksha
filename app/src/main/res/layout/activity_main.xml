@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/BlueBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:text="@string/create_account"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_back_24"
+        android:background="@color/blue_t"
+        android:drawablePadding="@dimen/dp_35"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_18"/>
+
+    <EditText
+        android:id="@+id/TextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BlueBox"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp_35"
+        android:text="@string/alam_lawsom_example_com"
+        />
+    <EditText
+        android:id="@+id/TextTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_35"
+        android:layout_marginEnd="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_35"
+        android:text="@string/jone_cooper"
+         />
+
+    <EditText
+        android:id="@+id/Example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_35"
+        android:layout_marginEnd="@dimen/dp_35"
+        android:layout_marginBottom="@dimen/dp_35"
+        android:text="@string/alam_lawsom_example_com" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_phone_number"
+        android:layout_below="@+id/Example"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue_t"/>
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:background="@drawable/tv_bg"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginStart="@dimen/dp_35"
+        android:layout_marginEnd="@dimen/dp_35"
+        android:text="@string/sign_up"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="@dimen/dp_15"/>
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/or"
+        android:textColor="@color/black"
+        android:layout_below="@+id/SignUp"
+        android:layout_marginTop="@dimen/dp_35"/>
+
+    <TextView
+        android:id="@+id/fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or"
+        android:background="@drawable/google_bg"
+        android:gravity="center"
+        android:padding="@dimen/dp_15"
+        android:text="@string/sign_up_with_facebook"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ion_logo_facebook__1_"
+        android:layout_marginStart="@dimen/dp_35"
+        android:layout_marginEnd="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_18"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fb"
+        android:text="@string/sign_up_with_google"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginStart="@dimen/dp_35"
+        android:layout_marginEnd="@dimen/dp_35"
+        app:drawableStartCompat="@drawable/flat_color_icons_google"
+        android:padding="@dimen/dp_18"
+        android:textColor="@color/black"
+        android:background="@drawable/g_bg"/>
+
+
+
+
+</RelativeLayout>
